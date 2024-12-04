@@ -126,6 +126,10 @@
           />
         </uni-list>
       </view>
+
+      <view class="bg-white ss-m-t-14">
+        <button class="ss-reset-button balance-btn ss-m-l-20" @tap="logout"> 退出登录 </button>
+      </view>
     </uni-forms>
 
     <!-- 当前社交平台的绑定关系，只处理 wechat 微信场景 -->
@@ -187,6 +191,7 @@
   import { showAuthModal } from '@/sheep/hooks/useModal';
   import FileApi from '@/sheep/api/infra/file';
   import UserApi from '@/sheep/api/member/user';
+  import AuthUtil from '@/sheep/api/member/auth';
 
   const state = reactive({
     model: {}, // 个人信息
@@ -208,7 +213,10 @@
   ];
 
   const userInfo = computed(() => sheep.$store('user').userInfo);
-
+  function logout() {
+    AuthUtil.logout();
+    sheep.$router.go('pages/index/index');
+  }
   // 选择性别
   function onChangeGender(e) {
     state.model.sex = e.detail.value;

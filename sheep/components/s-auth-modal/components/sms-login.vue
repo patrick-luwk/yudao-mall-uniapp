@@ -47,7 +47,7 @@
           v-model="state.model.code"
           :inputBorder="false"
           type="number"
-          maxlength="4"
+          maxlength="8"
         >
           <template v-slot:right>
             <button class="ss-reset-button login-btn-start" @tap="smsLoginSubmit"> 登录 </button>

@@ -273,18 +273,6 @@
 					}
 				},
 				{
-					"path": "goods-collect",
-					"style": {
-						"navigationBarTitleText": "我的收藏"
-					},
-					"meta": {
-						"auth": true,
-						"sync": true,
-						"title": "商品收藏",
-						"group": "用户中心"
-					}
-				},
-				{
 					"path": "goods-log",
 					"style": {
 						"navigationBarTitleText": "我的足迹"
@@ -352,6 +340,82 @@
 						"sync": true,
 						"title": "用户积分",
 						"group": "用户中心"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/user/baijia",
+			"pages": [{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "欢乐颂"
+					},
+					"meta": {
+						"auth": true,
+						"sync": true,
+						"title": "欢乐颂首页",
+						"group": "欢乐颂中心"
+					}
+				},
+				{
+					"path": "account-detail",
+					"style": {
+						"navigationBarTitleText": "我的收益"
+					},
+					"meta": {
+						"auth": true,
+						"sync": true,
+						"title": "用户收益",
+						"group": "欢乐颂中心"
+					}
+				},
+				{
+					"path": "baijia-box",
+					"style": {
+						"navigationBarTitleText": "录入提醒"
+					},
+					"meta": {
+						"auth": true,
+						"sync": true,
+						"title": "录入提醒",
+						"group": "欢乐颂中心"
+					}
+				},
+				{
+					"path": "goods",
+					"style": {
+						"navigationBarTitleText": "推广商品"
+					},
+					"meta": {
+						"auth": true,
+						"sync": true,
+						"title": "推广商品",
+						"group": "分销商城"
+					}
+				},
+				{
+					"path": "order",
+					"style": {
+						"navigationBarTitleText": "分销订单"
+					},
+					"meta": {
+						"auth": true,
+						"sync": true,
+						"title": "分销订单",
+						"group": "分销商城"
+					}
+				},
+				{
+					"path": "team",
+					"style": {
+						"navigationBarTitleText": "我的团队"
+					},
+					"meta": {
+						"auth": true,
+						"sync": true,
+						"title": "我的团队",
+						"group": "分销商城"
 					}
 				}
 			]
